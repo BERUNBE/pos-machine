@@ -14,10 +14,10 @@ it ('should return true when given list of valid barcodes', () => {
     expect(result).toBe(true);
 });
 
-it ('should return null when list includes invalid barcodes', () => {
+it ('should return error message when list includes invalid barcodes', () => {
     const purchaseList = ['0001', '1111'];
     let result = createReceipt(purchaseList);
-    expect(result).toBe(null);
+    expect(result).toBe('[ERROR]:');
 });
 
 it ('should return receipt when given list of valid barcodes', () => {

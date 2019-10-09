@@ -24,7 +24,7 @@ function isAllBarcodesInDatabase(purchaseList) {
 
 function createReceipt(purchaseList) {
     if (!isAllBarcodesInDatabase(purchaseList)) {
-        return null;  
+        return '[ERROR]:';  
     } 
     
     let receipt =   'Receipts\n' +

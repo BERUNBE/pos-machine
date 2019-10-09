@@ -9,7 +9,7 @@ Case 2:
 Case 2:
 	Given: ['0001', '1111']
 	When: createReceipt(['0001', '1111'])
-	Then: null
+	Then: '[ERROR]:'
 Case 3:
 	Given: ['0001', '0003', '0005', '0003']
 	When: createReceipt(['0001', '0003', '0005', '0003'])
