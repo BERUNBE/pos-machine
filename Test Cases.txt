@@ -1,0 +1,22 @@
+Case 1:
+	Given: ['0001', '1111']
+	When: isAllBarcodesInDatabase(['0001', '1111'])
+	Then: false
+Case 2:
+	Given: ['0001', '0002']
+	When: isAllBarcodesInDatabase(['0001', '0002'])
+	Then: true
+Case 2:
+	Given: ['0001', '1111']
+	When: createReceipt(['0001', '1111'])
+	Then: null
+Case 3:
+	Given: ['0001', '0003', '0005', '0003']
+	When: createReceipt(['0001', '0003', '0005', '0003'])
+	Then: 'Receipts\n' +
+                    '------------------------------------------------------------\n' +
+                    'Coca Cola                       3          1\n' +
+                    'Pepsi-Cola                      5          2\n' +
+                    'Dr Pepper                       7          1\n' +
+                    '------------------------------------------------------------\n' +
+                    'Price: 20\n';
